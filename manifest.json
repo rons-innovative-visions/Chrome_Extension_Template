@@ -1,0 +1,21 @@
+{
+    "name": "Extension Name",
+    "version": "0.1",
+    "manifest_version": 3,
+    "description": "Extension description",
+    "permissions": ["storage", "tabs", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./scripts/contentScript.js"],
+            "css": ["./styles/styles.css"]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Title",
+        "default_popup": "popup.html"
+    }
+}

@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 250px;
+    height: 75px;
+    text-align: center;
+}
